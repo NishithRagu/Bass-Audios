@@ -1,0 +1,82 @@
+.topbar .logo-img,
+.topbar .nav a,
+.topbar .responsive-nav .hamburger span{
+    animation: fade 2s ease;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+    
+}
+
+.landing-body .left .img-bg{
+    animation: fade 2s ease;
+}
+
+.landing-body .left .selector{
+    animation: fade-slide 2s ease 1s forwards;
+}
+
+@keyframes fade-slide {
+    from{
+        transform: translateY(5px);
+        /* opacity: 0; */
+    }
+
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.landing-body .right .txt1{
+    animation: fade 2s ease;
+}
+
+.landing-body .right .hero-text{
+    animation: fade-slide2 2s ease .5s forwards;
+}
+
+@keyframes fade-slide2 {
+    from{
+        transform: translateY(-5px);
+        /* opacity: 0; */
+    }
+
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.landing-body .right .para{
+    animation: fade 2s ease .6s forwards;
+}
+
+.landing-body .right .btn2{
+    animation: fade-slide 2s ease 1.2s forwards;
+}
+
+.landing-body .right .socialmedia{
+    animation: fade-slideX 2s ease 1.2s forwards;
+}
+
+@keyframes fade-slideX {
+    from{
+        transform: translateX(-10px);
+        /* opacity: 0; */
+    }
+
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+

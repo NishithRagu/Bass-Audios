@@ -1,0 +1,226 @@
+@media all and (max-width:576px) {
+    
+    .topbar{
+        position: relative;
+    }
+
+    .logo-img{
+        height: 11rem;
+    }
+
+    .nav{
+        backdrop-filter: blur(10px);
+        height: auto;
+        flex-direction: column;
+        z-index: 2;
+        align-items: flex-start;
+        justify-content: unset;
+        padding-top: 14vh;
+        gap: 2rem;
+        padding-left: 2rem !important;
+        padding-bottom: 2rem;
+        display: none !important;
+        position: relative;
+        box-shadow: 0 0 2px black;
+        animation: nav-slide .5s ease;
+    }
+
+    @keyframes nav-slide {
+        from{
+            transform: translate(20px);
+            opacity: 0;
+        }
+
+        to{
+            transform: translate(0px);
+            opacity: 1;
+        }
+    }
+
+
+    .nav a{
+        font-weight: 500;
+    }
+
+    .nav.show{
+        display: flex !important;
+    }
+
+    .res-img{
+        display: block;
+        position: absolute;
+        top: -5px;
+        left: -10px;
+    }
+
+    .responsive-nav{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 4;
+        display: flex;
+        background-color: transparent;
+    }
+
+    .nav a{
+        font-size: 1.2rem;
+    }
+
+
+    .left{
+        height: 50%;
+        gap: 1rem;
+        background-color: transparent;
+    }
+
+    .img-bg{
+        height: 16rem;
+        width: 16rem;
+    }
+
+    .bh1{
+        height: 100%;
+    }
+
+    .bh2{
+        height: 100%;
+    }
+
+    .selector{
+        gap: 1rem;
+    }
+
+    .black{
+        height: 1.3rem;
+        width: 1.3rem;
+    }
+
+    .silver{
+        height: 1.3rem;
+        width: 1.3rem;
+    }
+
+    .right{
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        gap: 1rem;
+    }
+
+    .txt1{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .para{
+        text-align: center;
+        font-size: .8rem;
+    }
+
+    .btn2{
+        font-size: 1rem;
+        padding: .5rem .5rem;
+        width: 8rem;
+    }
+
+    .socialmedia{
+        font-size: 1.3rem;
+    }
+}
+
+@media all and (max-width:768px) {
+    .nav{
+        background-color: transparent;
+    }
+
+    .nav a{
+        font-size: 1rem;
+    }
+
+    .logo-img{
+        height: 11rem;
+    }
+
+    .left{
+        height: 50%;
+        gap: 1rem;
+        background-color: transparent;
+    }
+
+    .img-bg{
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .bh1{
+        height: 100%;
+    }
+
+    .bh2{
+        height: 100%;
+    }
+
+    .selector{
+        gap: 1rem;
+    }
+
+    .black{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .silver{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .right{
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        gap: 1rem;
+    }
+
+    .txt1{
+        /* font-size: 1.3rem; */
+        text-align: center;
+    }
+
+    .para{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .btn2{
+        font-size: 1.3rem;
+        padding: .5rem .5rem;
+        width: 8rem;
+    }
+
+    .socialmedia{
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (min-width:768px) {
+    .nav{
+        background-color: transparent;
+    }
+
+    .img-bg{
+        height: 24rem;
+        width: 24rem;
+    }
+
+    .black{
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+
+    .silver{
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+}

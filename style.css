@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: raleway;
+    src: url('/fonts/Raleway-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: cinzel;
+    src: url('/fonts/Cinzel-VariableFont_wght.ttf');
+}
+
+.root{
+    height: 100vh;
+    width: 100vh;
+    background-color: #292b28;
+    box-sizing: border-box;
+}
+
+.topbar{
+    height: 14vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.logo-img{
+    height: 14rem;
+    /* width: 100%; */
+    position: absolute;
+    top: -25px;
+    cursor: pointer;
+}
+
+.nav{
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}  
+
+.res-img{
+    height: 8rem;
+    display: none;
+}
+
+.nav a{
+    text-decoration: none;
+    font-family: cinzel;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+.nav a::after{
+    content: "";
+    position: absolute;
+    background-color: #a4a8a8;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+}
+
+.nav a:hover{
+    color: #a4a8a8;
+}
+
+.nav a:hover::after{
+    color: #a4a8a8;
+    transform: scaleX(1);
+}
+
+.responsive-nav{
+    background-color: transparent;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    display: none;
+}
+
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    background-color: transparent;
+    width: 20px;
+    gap: .3rem;
+    cursor: pointer;
+}
+
+.hamburger span{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 2px;
+    transition: all .3s ease;
+}
+
+.hamburger.active span:nth-child(1){
+    transform: rotate(45deg) translateY(10px);
+}
+
+.hamburger.active span:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3){
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+.landing-body{
+    height: 86vh;
+    background-color: transparent;
+}
+
+.left{
+    height: 100%;
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-bg{
+    background-color: #a4a8a8;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+.bh1{
+    height: 115%;
+    position: absolute;
+    bottom: 10%;
+    transition: all .3s ease;
+    animation: float 3s ease-in-out infinite;
+}
+
+.bh1:hover{
+    transform: scale(1.2);
+}
+
+.bh2{
+    height: 115%;
+    position: absolute;
+    bottom: 10%;
+    transition: opacity .3s ease;
+    opacity: 0;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(15px);
+    }
+
+    0%{
+        transform: translateY(0);
+    }
+}
+
+.selector{
+    background-color: transparent;
+    opacity: 0;
+    display: flex;
+    gap: 1.3rem;
+
+}
+
+.black{
+    height: 2rem;
+    width: 2rem;
+    accent-color: black;
+}
+
+.silver{
+    height: 2rem;
+    width: 2rem;
+    accent-color: whitesmoke;
+}
+
+
+.right{
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.txt1{
+    color: whitesmoke;
+    font-family: raleway;
+}
+
+.hero-text{
+    color: #a4a8a8;
+    font-family: cinzel;
+    display: block;
+    opacity: 0;
+}
+
+.hero-text::before{
+    content: " ";
+    animation: word 7s ease infinite;
+}
+
+@keyframes word {
+    0%,20%{
+        content: 'Ouality Audio';
+    }
+
+    21%,40%{
+        content: 'Smart Features';
+    }
+
+    41%,60%{
+        content: 'Long Battery';
+    }
+
+    61%,80%{
+        content: 'Fast Charging';
+    }
+
+    81%,100%{
+        content: 'Sleek Design';
+    }
+}
+
+.para{
+    color: whitesmoke;
+    font-family: raleway;
+    opacity: 0;
+}
+
+.btn2{
+    font-size: 1.3rem;
+    font-family: raleway;
+    font-weight: 500;
+    outline: none;
+    background-color: whitesmoke;
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 10px;
+    padding: .5rem .8rem;
+    width: 10rem;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.btn2:hover{
+    background-color: #a4a8a8;
+}
+
+.btn2:active{
+    transform: scale(.9);
+}
+
+.socialmedia{
+    display: flex;
+    gap: 1.3rem;
+    font-size: 1.8rem;
+    margin-top: .3rem;
+    color: whitesmoke;
+    opacity: 0;
+}
+
+.socialmedia a{
+    color: whitesmoke;
+    transition: all .3s ease-in-out;
+}
+
+.socialmedia a:hover{
+    color: #a4a8a8;
+    transform: scale(1.2);
+}
+
+.socialmedia a:active{
+    transform: scale(.9);
+}
