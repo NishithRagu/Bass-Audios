@@ -70,7 +70,6 @@
     .left{
         height: 50%;
         gap: 1rem;
-        background-color: transparent;
     }
 
     .img-bg{
@@ -129,7 +128,7 @@
     }
 }
 
-@media all and (max-width:768px) {
+@media all and (min-width:576px) {
     .nav{
         background-color: transparent;
     }
@@ -184,7 +183,6 @@
     }
 
     .txt1{
-        /* font-size: 1.3rem; */
         text-align: center;
     }
 
@@ -209,18 +207,154 @@
         background-color: transparent;
     }
 
+    .logo-img{
+        height: 14rem;
+    }
+
+    .left{
+        height: 100%;
+        gap: 1rem;
+        background-color: transparent;
+    }
+
     .img-bg{
-        height: 24rem;
-        width: 24rem;
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .bh1{
+        height: 100%;
+    }
+
+    .bh2{
+        height: 100%;
+    }
+
+    .selector{
+        gap: 1rem;
     }
 
     .black{
-        height: 1.4rem;
-        width: 1.4rem;
+        height: 1.5rem;
+        width: 1.5rem;
     }
 
     .silver{
-        height: 1.4rem;
-        width: 1.4rem;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .right{
+        height: 100%;
+        background-color: transparent;
+        align-items: unset;
+        gap: 1.5rem;
+    }
+
+    .txt1{
+        text-align: unset;
+    }
+
+    .para{
+        text-align: unset;
+        font-size: 1rem;
+    }
+
+    .btn2{
+        font-size: 1.3rem;
+        padding: .5rem .5rem;
+        width: 8rem;
+    }
+
+    .socialmedia{
+        font-size: 1.7rem;
     }
 }
+
+@media all and (min-width:992px) {
+    .nav{
+        background-color: transparent;
+        font: 1.2rem;
+    }
+
+    .logo-img{
+        height: 14rem;
+    }
+
+    .left{
+        height: 100%;
+        gap: 1rem;
+        background-color: transparent;
+    }
+
+    .img-bg{
+        height: 25rem;
+        width: 25rem;
+    }
+
+    .bh1{
+        height: 100%;
+    }
+
+    .bh2{
+        height: 100%;
+    }
+
+    .selector{
+        gap: 1rem;
+    }
+
+    .black{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .silver{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .right{
+        height: 100%;
+        background-color: transparent;
+        align-items: unset;
+        gap: 1.5rem;
+    }
+
+    .txt1{
+        text-align: unset;
+    }
+
+    .para{
+        text-align: unset;
+        font-size: 1rem;
+    }
+
+    .btn2{
+        font-size: 1.3rem;
+        padding: .5rem .5rem;
+        width: 8rem;
+    }
+
+    .socialmedia{
+        font-size: 1.8rem;
+    }
+}
+
+@media all and (min-width:1200px) {
+    .nav{
+        background-color: transparent;
+    }
+
+    .logo-img{
+        height: 14rem;
+    }
+
+    .img-bg{
+        height: 30rem;
+        width: 30rem;
+    }
+
+
+}
+
