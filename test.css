@@ -1,0 +1,44 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 31, 37);
+}
+
+.swiper{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(43, 41, 41);
+}
+
+.swiper-wrapper{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.slide{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+/* .slide:nth-child(1){
+    background-color: black;
+}
+
+.slide:nth-child(2){
+    background-color: black;
+}
+
+.slide:nth-child(3){
+    background-color: black;
+} */

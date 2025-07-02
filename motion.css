@@ -59,7 +59,7 @@
     animation: fade 2s ease .6s forwards;
 }
 
-.landing-body .right .btn2{
+.landing-body .right .btn1{
     animation: fade-slide 2s ease 1.2s forwards;
 }
 
@@ -77,6 +77,10 @@
         transform: translateX(0px);
         opacity: 1;
     }
+}
+
+.features .features-img-holder .components{
+    animation: fade 2s ease;
 }
 
 

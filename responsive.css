@@ -1,11 +1,22 @@
 @media all and (max-width:576px) {
     
     .topbar{
-        position: relative;
+        position: fixed;
+        z-index: 10;
+        background-color: transparent;
+        height: 10vh;
+    }
+
+    .logo{
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
     }
 
     .logo-img{
-        height: 11rem;
+        height: 10rem;
     }
 
     .nav{
@@ -13,26 +24,26 @@
         height: auto;
         flex-direction: column;
         z-index: 2;
-        align-items: flex-start;
-        justify-content: unset;
-        padding-top: 14vh;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
         gap: 2rem;
-        padding-left: 2rem !important;
+        /* padding-left: 2rem !important; */
         padding-bottom: 2rem;
         display: none !important;
         position: relative;
         box-shadow: 0 0 2px black;
-        animation: nav-slide .5s ease;
+        animation: nav-slide .5s ease forwards;
     }
 
     @keyframes nav-slide {
         from{
-            transform: translate(20px);
+            transform: translateY(-100px);
             opacity: 0;
         }
 
         to{
-            transform: translate(0px);
+            transform: translateY(-74px);
             opacity: 1;
         }
     }
@@ -46,12 +57,12 @@
         display: flex !important;
     }
 
-    .res-img{
+    /* .res-img{
         display: block;
         position: absolute;
         top: -5px;
         left: -10px;
-    }
+    } */
 
     .responsive-nav{
         position: absolute;
@@ -66,10 +77,15 @@
         font-size: 1.2rem;
     }
 
+    .landing-body{
+        background-color: transparent;
+    }
+
 
     .left{
-        height: 50%;
-        gap: 1rem;
+        height: 60%;
+        padding-top: 10vh;
+        background-color: transparent;
     }
 
     .img-bg{
@@ -103,12 +119,12 @@
         background-color: transparent;
         justify-content: center;
         align-items: center;
-        height: 50%;
+        height: 40%;
         gap: 1rem;
     }
 
     .txt1{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 
@@ -117,7 +133,7 @@
         font-size: .8rem;
     }
 
-    .btn2{
+    .btn1{
         font-size: 1rem;
         padding: .5rem .5rem;
         width: 8rem;
@@ -126,6 +142,210 @@
     .socialmedia{
         font-size: 1.3rem;
     }
+
+
+    /* about */
+
+    .abt-left{
+        background-color: transparent;
+        height: 60%;
+        padding-top: 10vh;
+        overflow: hidden;
+    }
+
+    .abt-img{
+        height: 80%;
+    }
+
+    .abt-right{
+        background-color: transparent;
+        height: 40%;
+        gap: .8rem;
+    }
+
+    .abt-txt{
+        font-size: 1.5rem;
+    }
+
+    .abt-para{
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    .btn2{
+        font-size: 1rem;
+        padding: .5rem .5rem;
+        width: 8rem;
+    }
+
+    /* features */
+
+    .features{
+        justify-content: center;
+    }
+
+    .features-img-holder{
+        background-color: transparent;
+        width: 22rem;
+        height: 50vh;
+    }
+
+    .features-img{
+        width: 15rem;
+        height: 20rem;
+    }
+
+    .component-txt{
+        font-size: .5rem;
+    }
+
+    .pointer{
+        width: 2rem;
+        left: -30px;
+    }
+
+    .c1{
+        bottom: 32%;
+        right: 3%;
+    }
+
+    .c2{
+        bottom: 40%;
+    }
+
+    .c3{
+        left: 18%;
+        top: 12%;
+    }
+
+    .c4{
+        bottom: 24%;
+        right: 22%;
+    }
+
+    .p4{
+        top: 0px;
+    }
+
+    .c5{
+        right: 0%;
+    }
+
+    .c6{
+        top: 18%;
+        right: 5%;
+    }
+
+
+    /* footer */
+
+    .footer{
+        background-color: var(--bg-color);
+        height: 105vh;
+    }
+
+    .sponser{
+        background-color: transparent;
+        height: 30vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .amazon{
+        height: 3.5rem;
+        width: 8rem;
+    }
+
+    .apple{
+        height: 2.8rem;
+        width: 9rem;
+    }
+
+    .spotify{
+        height: 5rem;
+        width: 8rem;
+    }
+
+    .youtube{
+        height: 2.5rem;
+        width: 8rem;
+    }
+
+    .ftr-logo{
+        background-color: transparent;
+        height: 10vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: end;
+    }
+
+    .ftr-name{
+        font-size: 1.1rem;
+    }
+
+    .ftr-nav{
+        background-color: transparent;
+        height: 60vh;
+    }
+
+    .ftr-navigations{
+        padding-top: 1rem;
+        height: 50%;
+        gap: .5rem;
+        justify-content: start;
+        background-color: transparent;
+    }
+
+    .ftr-nav h3{
+        font-size: 1rem;
+    }
+
+    .ftr-nav a{
+        font-size: 1rem;
+    }
+
+    .ftr-support{
+        padding-top: 1rem;
+        height: 50%;
+        gap: .5rem;
+        justify-content: start;
+    }
+
+
+    .mailbox{
+        background-color: transparent;
+        height: 50%;
+        justify-content: start;
+    }
+
+    .mailbox h3{
+        font-size: 1.5rem;
+    }
+
+    .mailholder{
+        height: 3rem;
+    }
+
+    .mail-inp{
+        font-size: 1rem;
+    }
+
+    .ftr-media{
+        gap: 1rem;
+    }
+
+    .ftr-media a{
+        font-size: 1.3rem;
+    }
+
+    .copyright{
+        font-size: .8rem;
+        height: 5vh;
+    }
+
 }
 
 @media all and (min-width:576px) {
@@ -142,8 +362,8 @@
     }
 
     .left{
-        height: 50%;
-        gap: 1rem;
+        height: 60%;
+        padding-top: 10vh;
         background-color: transparent;
     }
 
@@ -175,11 +395,11 @@
     }
 
     .right{
-        background-color: transparent;
-        justify-content: center;
-        align-items: center;
-        height: 50%;
-        gap: 1rem;
+            background-color: transparent;
+            justify-content: center;
+            align-items: center;
+            height: 40%;
+            gap: 1rem;
     }
 
     .txt1{
@@ -200,6 +420,188 @@
     .socialmedia{
         font-size: 1.5rem;
     }
+
+
+    /* about */
+
+    .abt-left{
+        background-color: transparent;
+        height: 60%;
+        padding-top: 10vh;
+        overflow: hidden;
+    }
+
+    .abt-img{
+        height: 80%;
+    }
+
+    .abt-right{
+        background-color: transparent;
+        height: 40%;
+        gap: 1.3rem;
+        justify-content: flex-start;
+    }
+
+    /* features */
+
+    .features-img-holder{
+        background-color:transparent;
+        width: 35rem;
+        height: 75vh;
+    }
+
+    .features-img{
+        width: 22rem;
+        height: 28rem;
+    }
+
+    .component-txt{
+        font-size: .8rem;
+    }
+
+    .pointer{
+        width: 4rem;
+        left: -50px;
+    }
+
+    .c1{
+        right: 5%;
+        bottom: 37%;
+    }
+
+    .c2{
+        left: 5%;
+    }
+
+    .c4{
+        bottom: 30%;
+    }
+
+    .c3{
+        top: 24%;
+        left: 10%;
+    }
+
+    .c5{
+        right: 0%;
+        bottom: 52%;
+    }
+
+    .c6{
+        top: 24%;
+        right: 10%;
+    }
+
+    /* footer */
+
+    .footer{
+        background-color: var(--bg-color);
+        height: 105vh;
+    }
+
+    .sponser{
+        background-color: transparent;
+        height: 30vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        /* overflow: hidden; */
+    }
+
+    .amazon{
+        height: 5rem;
+        width: 10rem;
+    }
+
+    .apple{
+        height: 4.5rem;
+        width: 15rem;
+    }
+
+    .spotify{
+        height: 9rem;
+        width: 14rem;
+    }
+
+    .youtube{
+        height: 4rem;
+        width: 10rem;
+    }
+
+    .ftr-logo{
+        background-color: transparent;
+        height: 10vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: end;
+    }
+
+    .ftr-name{
+        font-size: 1.1rem;
+    }
+
+    .ftr-nav{
+        background-color: transparent;
+        height: 60vh;
+    }
+
+    .ftr-navigations{
+        padding-top: 1rem;
+        height: 50%;
+        gap: .5rem;
+        justify-content: start;
+        background-color: transparent;
+    }
+
+    .ftr-nav h3{
+        font-size: 1rem;
+    }
+
+    .ftr-nav a{
+        font-size: 1rem;
+    }
+
+    .ftr-support{
+        padding-top: 1rem;
+        height: 50%;
+        gap: .5rem;
+        justify-content: start;
+    }
+
+
+    .mailbox{
+        background-color: transparent;
+        height: 50%;
+        justify-content: start;
+    }
+
+    .mailbox h3{
+        font-size: 1.5rem;
+    }
+
+    .mailholder{
+        height: 3rem;
+    }
+
+    .mail-inp{
+        font-size: 1rem;
+    }
+
+    .ftr-media{
+        gap: 1rem;
+    }
+
+    .ftr-media a{
+        font-size: 1.3rem;
+    }
+
+    .copyright{
+        font-size: .8rem;
+        height: 5vh;
+    }
+    
+
 }
 
 @media all and (min-width:768px) {
@@ -269,6 +671,114 @@
     .socialmedia{
         font-size: 1.7rem;
     }
+
+    /* about */
+
+    .abt-left{
+        height: 100%;
+    }
+
+    .abt-img{
+        height: 55%;
+    }
+
+    .abt-right{
+        height: 100%;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .abt-para{
+        font-size: 1rem;
+    }
+
+    /* features */
+
+    .features-img-holder{
+        background-color:transparent;
+        width: 48rem;
+        height: 75vh;
+    }
+
+    .features-img{
+        height: 45rem;
+        width: 35rem;
+    }
+    
+    .components{
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+    
+    .pointer{
+        position: absolute;
+        width: 6rem;
+        z-index: 1;
+        left: -90px;
+        top: 50%;
+    }
+    
+    .component-txt{
+        font-size: 1.1rem;
+        font-family: raleway;
+        color: black;
+        background: linear-gradient(120deg,rgb(102, 100, 100),white);
+        border: 2px solid rgb(130, 127, 127);
+        border-radius: 10px;
+        padding: .2rem .3rem;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .c1{
+        right: 0%;
+        bottom: 32%;
+    }
+    
+    .c2{
+        transform: scaleX(-1);
+        left: 3%;
+    
+    }
+    
+    .ct2{
+        transform: scaleX(-1);
+    }
+    
+    .c3{
+        top: 8%;
+        left: 6%;
+        transform: scaleX(-1);
+    }
+    
+    .ct3{
+        transform: scaleX(-1);
+    }
+    
+    .c4{
+        bottom: 18%;
+        right: 22%;
+    }
+    
+    .p4{
+        transform: scaleY(-1);
+        top: -50%;
+    }
+    
+    .c5{
+        right: 2%;
+        bottom: 50%;
+    }
+    
+        .c6{
+            top: 5%;
+            right: 5%;
+        }
+    
+
 }
 
 @media all and (min-width:992px) {
@@ -339,11 +849,24 @@
     .socialmedia{
         font-size: 1.8rem;
     }
+
+    /* about */
+
+    .abt-right{
+        gap: 1.5rem;
+    }
+
+    /* features */
+
 }
 
 @media all and (min-width:1200px) {
     .nav{
         background-color: transparent;
+    }
+
+    .nav a{
+        font-size: 1.2rem;
     }
 
     .logo-img{
@@ -355,6 +878,304 @@
         width: 30rem;
     }
 
+    .para{
+        font-size: 1.2rem;
+    }
+
+    /* about */
+
+    .abt-img{
+        height: 70%;
+    }
+
+    .abt-para{
+        font-size: 1.2rem;
+    }
+
+    /* features */
+    
+    .features-img-holder{
+        height: 75vh;
+        width: 55rem;
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #292b28;
+        position: relative;
+    }
+    
+    .features-img{
+        height: 45rem;
+        width: 35rem;
+    }
+    
+    .components{
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+    
+    .pointer{
+        position: absolute;
+        width: 6rem;
+        z-index: 1;
+        left: -90px;
+        top: 50%;
+    }
+    
+    .component-txt{
+        font-size: 1.2rem;
+        font-family: raleway;
+        color: black;
+        background: linear-gradient(120deg,rgb(102, 100, 100),white);
+        border: 2px solid rgb(130, 127, 127);
+        border-radius: 10px;
+        padding: .2rem .3rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .c1{
+        right: 4%;
+        bottom: 32%;
+    }
+    
+    .c2{
+        transform: scaleX(-1);
+        left: 3%;
+    
+    }
+    
+    .ct2{
+        transform: scaleX(-1);
+    }
+    
+    .c3{
+        top: 10%;
+        left: 10%;
+        transform: scaleX(-1);
+    }
+    
+    .ct3{
+        transform: scaleX(-1);
+    }
+    
+    .c4{
+        bottom: 18%;
+        right: 22%;
+    }
+    
+    .p4{
+        transform: scaleY(-1);
+        top: -50%;
+    }
+    
+    .c5{
+        right: 2%;
+        bottom: 50%;
+    }
+    
+    .c6{
+        top: 5%;
+        right: 10%;
+    }
+    
+    /* footer */
+
+    .footer{
+        background-color: var(--bg-color);
+        height: 50vh;
+    }
+    
+    .sponser{
+        background-color: transparent;
+        height: 10vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* overflow: hidden; */
+    }
+    
+    .amazon{
+        padding-top: .8rem;
+        height: 5rem;
+        width: 12rem;
+    }
+    
+    .apple{
+        height: 5rem;
+        width: 15rem;
+    }
+    
+    .spotify{
+        height: 8rem;
+        width: 12rem;
+    }
+    
+    .youtube{
+        height: 5rem;
+        width: 15rem;
+    }
+    
+    .ftr-name{
+        font-family: var(--main-font);
+        color: whitesmoke;
+        font-weight: bold;
+        font-size:2rem;
+    }
+    
+    .firstWord{
+        color: var(--matching-color);
+        font-size: larger;
+    }
+    
+    .ftr-logo{
+        background-color: transparent;
+        height: 35vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .ftr-nav{
+        background-color: transparent;
+        height: 35vh;
+    }
+    
+    .ftr-navigations{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .5rem;
+        background-color: transparent;
+        height: 100%;
+    }
+    
+    .ftr-nav h3{
+        color: var(--matching-color);
+        font-family: var(--main-font);
+        font-size: 1.5rem;
+    }
+    
+    .ftr-nav a{
+        text-decoration: none;
+        color: var(--text-color);
+        font-family: var(--sub-font);
+        font-size: 1.2rem;
+        transition: all .3s ease;
+    }
+    
+    .ftr-nav a:hover{
+        transform: scale(1.1);
+    }
+    
+    .ftr-support{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .5rem;
+        background-color: transparent;
+        height: 100%;
+    }
+    
+    .mailbox{
+        background-color: transparent;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.5rem;
+    }
+    
+    
+    .subscribe{
+        font-size: 1rem;
+        font-family: var(--sub-font);
+        color: var(--text-color);
+    }
+    
+    .mailholder{
+        width: 100%;
+        height: 4rem;
+        border-radius: 100px;
+    }
+    
+    .mail-inp{
+        height: 100%;
+        width: 60%;
+        background-color: transparent;
+        padding: 1.5rem;
+        color: var(--text-color);
+        font-size: 1.2rem;
+        border-radius: 100px;
+        border: none;
+        outline: none;
+    }
+    
+    form{
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+        backdrop-filter: blur(10px);
+        background-color: rgba(94, 93, 93, 0.435);
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .send{
+        width: 40%;
+        height: 100%;
+        color: black;
+        font-family: var(--sub-font);
+        font-weight: 600;
+        border-radius: 100px;
+        outline: none;
+        background: linear-gradient(120deg,rgb(102, 100, 100),white);
+        /* border: 2px solid rgb(145, 144, 144); */
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+    }
+    
+    .send-icon{
+        font-size: 1.5rem;
+        color: black;
+    }
+    
+    .ftr-media{
+        display: flex;
+        gap: 1.3rem;
+        justify-content: center;
+        margin-top: .5rem;
+    }
+    
+    .ftr-media a{
+        font-size: 1.8rem;
+        margin-top: .3rem;
+        color: var(--text-color);
+    }
+    
+    .ftr-media a:hover{
+        transform: scale(1.2);
+    }
+    
+    .copyright{
+        height: 5vh;
+        font-family: var(--sub-font);
+        color: var(--matching-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 
 }
 
