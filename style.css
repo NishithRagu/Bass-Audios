@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: raleway;
-    src: url('https://nishithragu.github.io/Bass-Audios//fonts/Raleway-VariableFont_wght.ttf');
+    src: url('/fonts/Raleway-VariableFont_wght.ttf');
 }
 
 @font-face {
     font-family: cinzel;
-    src: url('https://nishithragu.github.io/Bass-Audios//fonts/Cinzel-VariableFont_wght.ttf');
+    src: url('/fonts/Cinzel-VariableFont_wght.ttf');
 }
 
 /* variable for accessing */
@@ -100,6 +100,21 @@
 .nav a:hover::after{
     color: var(--matching-color);
     transform: scaleX(1);
+}
+
+.lg-btn{
+    outline: none;
+    border: 2px solid rgb(145, 144, 144);
+    background: linear-gradient(120deg,rgb(102, 100, 100),white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.lg-btn > i{
+    font-size: 1.3rem;
 }
 
 .responsive-nav{
@@ -389,54 +404,70 @@
 }
 
 
+/* products */
 
-/* features page */
-
-
-.features{
+.products{
     background-color: var(--bg-color);
     height: 100vh;
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-
-.features-img-holder{
-    height: 75vh;
-    width: 55rem;
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--bg-color);
-    position: relative;
-    overflow: hidden;
 }
 
-.features-img{
-    height: 45rem;
-    width: 35rem;
+.product-slider{
+    background-color: transparent;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: flex-end;
+    padding: .5rem;
+    position: relative;
+    /* overflow: auto; */
+}
+
+.item{
+    height: 40rem;
+    width: 40rem;
     animation: float 3s ease-in-out infinite;
 }
 
-.components{
-    background-color: transparent;
+.slides{
+    height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: absolute;
+    top: -5%;
+    transition: opacity .5s ease;
 }
 
-.pointer{
-    position: absolute;
-    width: 6rem;
-    z-index: 1;
-    left: -90px;
-    top: 50%;
+.s1{
+    z-index: 2;
+    
 }
 
-.component-txt{
+.s2{
+    opacity: 0;
+}
+
+.s3{
+    opacity: 0;
+}
+
+.s4{
+    opacity: 0;
+}
+
+.s5{
+    opacity: 0;
+}
+
+.s6{
+    opacity: 0;
+}
+
+.module{
     font-size: 1.2rem;
     font-family: var(--sub-font);
     color: black;
@@ -444,56 +475,58 @@
     border: 2px solid rgb(130, 127, 127);
     border-radius: 10px;
     padding: .2rem .3rem;
-    position: relative;
-    z-index: 1;
 }
 
-.c1{
-    right: 4%;
-    bottom: 32%;
+.selection-btn{
+    display: flex;
+    gap: 1rem;
 }
 
-.c2{
-    transform: scaleX(-1);
-    left: 3%;
-
+.selection-btn > input{
+    height: 2rem;
+    width: 2rem;
 }
 
-.ct2{
-    transform: scaleX(-1);
+.black-mdl{
+    accent-color: black;
 }
 
-.c3{
-    top: 10%;
-    left: 10%;
-    transform: scaleX(-1);
+.white-mdl{
+    accent-color: white;
 }
 
-.ct3{
-    transform: scaleX(-1);
+.green-mdl{
+    accent-color: rgb(6, 66, 38);
 }
 
-.c4{
-    bottom: 18%;
-    right: 22%;
+.grey-mdl{
+    accent-color: slategray;
 }
 
-.p4{
-    transform: scaleY(-1);
-    top: -50%;
+.fire-mdl{
+    accent-color: firebrick;
 }
 
-.c5{
-    right: 2%;
-    bottom: 50%;
+.blue-mdl{
+    accent-color: blueViolet;
 }
 
-.c6{
-    top: 5%;
-    right: 10%;
+.apply{
+    animation: model-transition .5s ease forwards;
 }
 
-/* faeture title */
+@keyframes model-transition {
+    from{
+        transform: translateX(100px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+
+
+/* feature title */
 
 .features-title{
     background-color: transparent;
@@ -657,7 +690,7 @@ form{
 }
 
 .send{
-    width: 40%;
+    width: 10rem;
     height: 100%;
     color: black;
     font-family: var(--sub-font);

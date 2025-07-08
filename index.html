@@ -6,9 +6,12 @@
     <title>Bass Audios</title>
 
     <!-- sheet -->
-    <link rel="stylesheet" href="https://nishithragu.github.io/Bass-Audios//style.css">
-    <link rel="stylesheet" href="https://nishithragu.github.io/Bass-Audios//responsive.css">
-    <link rel="stylesheet" href="https://nishithragu.github.io/Bass-Audios//motion.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/responsive.css">
+    <link rel="stylesheet" href="/motion.css">
+
+    <!-- swiper css -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <!-- links -->
 
@@ -29,7 +32,7 @@
 
             <!-- logo -->
             <div class="logo col-5 col-sm-4 col-md-3 col-lg-2">
-                <img class="logo-img" src="https://nishithragu.github.io/Bass-Audios//images/20250623_110310.png" alt="">
+                <img class="logo-img" src="/images/20250623_110310.png" alt="">
             </div>
 
             <!-- navs -->
@@ -37,8 +40,8 @@
 
                 <a href="#">HOME</a>
                 <a href="#about">ABOUT</a>
-                <a href="#features">FEATURES</a>
-                <a href="#">PRODUCTS</a>
+                <a href="#products">PRODUCTS</a>
+                <button class = "lg-btn"><i class="fa-solid fa-power-off"></i></button>
             </div>
 
             <!-- hamburger icon -->
@@ -60,9 +63,9 @@
 
                 <!-- headphone image -->
                 <div class="img-bg">
-                    <img src="https://nishithragu.github.io/Bass-Audios//images/Untitled11_20250622191942.png" class = "bh1" alt="" id = "bh1">
+                    <img src="/images/Untitled11_20250622191942.png" class = "bh1" alt="" id = "bh1">
 
-                    <img src="https://nishithragu.github.io/Bass-Audios//images/Untitled11_20250623124457.png " class = "bh2" alt="" id = "bh2">
+                    <img src="/images/Untitled11_20250623124457.png " class = "bh2" alt="" id = "bh2">
                 </div>
 
                 <!-- colours selection -->
@@ -101,7 +104,7 @@
              <div class="abt-left col-12 col-md-6 col-lg-6">
 
                 <!-- about image -->
-                <img src="https://nishithragu.github.io/Bass-Audios//images/levitating-music-headphones-display.png" alt="" class="abt-img">
+                <img src="/images/levitating-music-headphones-display.png" alt="" class="abt-img">
 
              </div>
 
@@ -123,54 +126,61 @@
         </div>
 
 
-        <!-- features page -->
-        <div class="features col-12" id = "features">
 
-            <!-- features image with parts -->
-            <div class="features-img-holder">
+        <!-- products page-->
+         <div class="products col-12" id="products">
+            
+            <!-- slider -->
+             <div class="product-slider col-6">
 
-                <!-- image -->
-                <img src="https://nishithragu.github.io/Bass-Audios//images/file_000000004a8c61f8aaa126315b0001c5.png" alt="" class="features-img">
+                    <div class="slides s1" id = "1">
+                        <img class = "item" id = "item1" src="/images/file_0000000069bc61f7b88ac4bc9b7c2a16.png" alt="">
+                        <span class="module">Premium Black Finish</span>
+                    </div>
 
-                <!-- parts -->
-                <div class="components c1">
-                    <img src="https://nishithragu.github.io/Bass-Audios//images/tooltip-right.svg" alt="" class="pointer p1">
-                    <span class="component-txt ct1">Integrated Button</span>
-                </div>
+                    <div class="slides s2" id = "2">
+                        <img class = "item" id = "item2" src="/images/file_00000000c7ac61f8bb3b6340313551d9.png" alt="">
+                        <span class="module">Premium White Finish</span>
+                    </div>
 
-                <div class="components c2">
-                    <img src="https://nishithragu.github.io/Bass-Audios//images/tooltip-right.svg" alt="" class="pointer p2">
-                    <span class="component-txt ct2">Over-Ear Design</span>
-                </div>
+                    <div class="slides s3" id = "3">
+                        <img class = "item" id = "item3" src="/images/file_00000000b0e861f983129c019e9af607.png" alt="">
+                        <span class="module">Dark See Green Finish</span>
+                    </div>
 
-                <div class="components c3">
-                    <img src="https://nishithragu.github.io/Bass-Audios//images/tooltip-right.svg" alt="" class="pointer p3">
-                    <span class="component-txt ct3">Matte Black Design</span>
-                </div>
+                    <div class="slides s4" id = "4">
+                        <img class = "item" id = "item4" src="/images/file_0000000055dc61f99274de406b422b18.png" alt="">
+                        <span class="module">Slate Grey Finish</span>
+                    </div>
 
-                <div class="components c4">
-                    <img src="https://nishithragu.github.io/Bass-Audios//images/tooltip-right.svg" alt="" class="pointer p4">
-                    <span class="component-txt ct4">Fast Charging</span>
-                </div>
+                    <div class="slides s5" id = "5">
+                        <img class = "item" id = "item5" src="/images/file_00000000d90061f5928a5dda44d6c90f.png" alt="">
+                        <span class="module">Firebrick Finish</span>
+                    </div>
 
-                <div class="components c5">
-                    <img src="https://nishithragu.github.io/Bass-Audios//images/tooltip-right.svg" alt="" class="pointer p5">
-                    <span class="component-txt ct5">Adjustable Capability</span>
-                </div>
+                    <div class="slides s6" id = "6">
+                        <img class = "item" id = "item6" src="/images/file_00000000b47861f987863bbbef6e76f7.png" alt="">
+                        <span class="module">BlueViolet Finish</span>
+                    </div>
 
-                <div class="components c6">
-                    <img src="https://nishithragu.github.io/Bass-Audios//images/tooltip-right.svg" alt="" class="pointer p6">
-                    <span class="component-txt ct6">Soft Leatherette</span>
-                </div>
+                    <div class="selection-btn">
 
-            </div>
+                        <input class="black-mdl" id = "black-mdl" name = "selection" type = "radio" checked></input>
 
-            <!-- faeture title -->
-            <div class="features-title col-12">
-                <h1 class = "feature-txt"> What We <span class="feature-spr-txt"> Build </span>!</h1>
-            </div>  
+                        <input class="white-mdl" id = "white-mdl" name = "selection" type = "radio"></input>
 
-        </div>
+                        <input class="green-mdl" id = "green-mdl" name = "selection" type = "radio"></input>
+
+                        <input class="grey-mdl" id = "grey-mdl" name = "selection" type = "radio"></input>
+
+                        <input class="fire-mdl" id = "fire-mdl" name = "selection" type = "radio"></input>
+                        
+                        <input class="blue-mdl" id = "blue-mdl" name = "selection" type = "radio"></input>
+
+                    </div>
+
+             </div>
+         </div>
 
 
         <!-- footer page -->
@@ -180,33 +190,33 @@
             <div class="sponser col-12">
 
                 <a href="#footer">
-                    <img src="https://nishithragu.github.io/Bass-Audios//images/amazon.png" alt="" class="amazon">
+                    <img src="/images/amazon.png" alt="" class="amazon">
                 </a>
 
                 <a href="#footer">
-                    <img src="https://nishithragu.github.io/Bass-Audios//images/apple.png" alt="" class="apple">
+                    <img src="/images/apple.png" alt="" class="apple">
                 </a>
 
                 <a href="#footer">
-                    <img src="https://nishithragu.github.io/Bass-Audios//images/Spotify-Logo.wine.png" alt="" class="spotify">
+                    <img src="/images/Spotify-Logo.wine.png" alt="" class="spotify">
                 </a>
 
                 <a href="#footer">
-                <img src="https://nishithragu.github.io/Bass-Audios//images/youtube.png" alt="" class="youtube">
+                <img src="/images/youtube.png" alt="" class="youtube">
                 </a>
 
             </div>
 
             <!-- website name for footer -->
-            <div class="ftr-logo col-12 col-md-3 col-lg-3">
+            <div class="ftr-logo col-12 col-md-12 col-lg-3">
                 <h1 class="ftr-name"> <span class="firstWord">B</span>ass <span class="firstWord"> A</span>udios...</h1>
             </div>
 
             <!-- footer all navigation link -->
-            <div class="ftr-nav col-12 col-md-9 col-lg-9 row m-0 p-0">
+            <div class="ftr-nav col-12 col-md-12 col-lg-9 row m-0 p-0">
 
                 <!-- main navigation -->
-                <div class="ftr-navigations col-6 col-md-4 col-lg-4">
+                <div class="ftr-navigations col-6 col-md-6 col-lg-3">
                     <h3>Navigations</h3>
                     <a href="#">Home</a>
                     <a href="#about">About</a>
@@ -215,7 +225,7 @@
                 </div>
 
                 <!-- website property -->
-                <div class="ftr-support col-6 col-md-4 col-lg-4">
+                <div class="ftr-support col-6 col-md-6 col-lg-3">
                     <h3>Support</h3>
                     <a href="#footer">Help Center</a>
                     <a href="#footer">Terms</a>
@@ -224,7 +234,7 @@
                 </div>
 
                 <!-- mail for contact -->
-                <div class="mailbox col-12 col-md-4 col-lg-4">
+                <div class="mailbox col-12 col-md-12 col-lg-6">
 
                     <!-- heading and text -->
                     <h3>Subscribe</h3>
@@ -257,7 +267,9 @@
 
     </div>
 
+
+    
     <!-- script file -->
-    <script src="https://nishithragu.github.io/Bass-Audios//script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
